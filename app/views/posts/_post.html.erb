@@ -9,6 +9,10 @@
   </p>
 
   <p>
+    <%= pluralize post.comments.count, "comment" %>
+  </p>
+
+  <p>
     <strong>Content:</strong>
     <%= post.content %>
   </p>
