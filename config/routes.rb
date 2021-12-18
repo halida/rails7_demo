@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   end
 
   root "posts#index"
+
+  resource :tools do
+    get :calculate
+    post :calculate
+  end
 end

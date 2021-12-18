@@ -1,0 +1,13 @@
+<turbo-frame id="side">
+  <div style="width: 100%">
+    <div style="position: absolute; top:0; right: 0">
+      <%= form_tag "/tools/calculate" do %>
+        <%= number_field_tag :a, params[:a] %>
+        <%= number_field_tag :b, params[:b] %>
+        <%= submit_tag "submit" %>
+      <% end %>
+      <div class="result"><%= @result %></div>
+    </div>
+  </div>
+</turbo-frame>
+
